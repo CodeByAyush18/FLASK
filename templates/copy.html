@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>🐼</title>
+    <style>
+        h1{
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        h2{
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        #banner{
+            /* margin-left: 34%; */
+            max-width: 100%;
+            height: 360px;
+            align-items: center;
+        }
+        .bodytext{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(80,80,80);
+        }
+        #container{
+            max-width:720px;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Welcome to 🐼</h1>
+    <img id="banner" src="http://192.168.1.197:5000/static/banner.jpg" height="320"><br>
+    <h2>About 🐼</h2>
+    <p class="bodytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio animi excepturi atque ipsam officia accusamus nihil tenetur laboriosam hic porro, asperiores at. Magni ea, reprehenderit aliquid molestias mollitia ipsam.</p>
+    <h2>Positions:</h2>
+    <div>
+    
+        {%for job in jobs%}
+        <div>
+        <h3>{{job['title']}}</h3>
+        <!-- <div>Location: {{job['location']}}</div> -->
+        {%endfor%}
+    </div>
+    
+</div>
+    <div style="text-align: center;">
+    <button>Contact Us</button>
+    <p>Copyright 🐼 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
